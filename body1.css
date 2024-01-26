@@ -1,0 +1,24 @@
+body {
+    background-color: palegreen;
+    color: black;
+    margin: 0;
+    font-family: "cursive", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center; /* Center-align text within the container */
+}
+
+.container p {
+    margin: 10px 0; /* Add some margin between paragraphs for better spacing */
+}
+
+.container img {
+    width: 300px; /* Adjust the width to make the images bigger */
+    margin-bottom: 15px; /* Add margin to separate images */
+}
