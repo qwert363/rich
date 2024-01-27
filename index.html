@@ -10,15 +10,26 @@
 <body>
     <div class="container">
         <h1 id="top_header">RICH is 21</h1>
-        <a href="rich2.html" onclick="location.href=this.href;" ontouchend="location.href=this.href;">
-    <img src="rich solo.jpg" width="400px">
-</a>
-
+        <a href="rich2.html" id="navigateLink">
+            <img src="rich solo.jpg" width="400px">
+        </a>
 
         <p id="clickMe" onclick="showBalloons()">Click on yourself</p>
     </div>
 
     <div id="balloon-container"></div>
+
+    <script>
+        // Function to navigate to rich2.html
+        function navigateToRich2() {
+            location.href = "rich2.html";
+        }
+
+        // Add event listeners for both click and touch events
+        var navigateLink = document.getElementById("navigateLink");
+        navigateLink.addEventListener("click", navigateToRich2);
+        navigateLink.addEventListener("touchend", navigateToRich2);
+    </script>
 
     <script src="script.js"></script>
 </body>
